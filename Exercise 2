@@ -1,0 +1,16 @@
+user_in = str()
+temp = int()
+
+while user_in != ('C' or 'F'):
+	user_in = input("Press 'C' if Celsius and 'F' Farenheit: ")
+
+	if user_in == ('C'):
+		in_temp = int(input("Convert(C to F): "))
+		temp = int((in_temp*(9/5))+32)
+		print(temp)
+		break
+	elif user_in == ('F'):
+		in_temp = int(input("Convert(F to C): "))
+		temp = int((in_temp-32)*(5/9))
+		print(temp)
+		break
