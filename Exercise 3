@@ -1,0 +1,11 @@
+import random
+
+user_in = int()
+num = random.randint(1,9)
+
+while user_in != num:
+	user_in = int(input('Guess the number: '))
+	if user_in == num:
+		print('Correct! Good guess!')
+	else:
+		print('Wrong!')
